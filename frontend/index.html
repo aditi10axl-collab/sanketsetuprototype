@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sanket Setu AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================================================
+     BACKGROUND FX
+========================================================= -->
+
+<div class="ambient-bg">
+    <div class="grid-layer"></div>
+    <div class="orb orb-cyan"></div>
+    <div class="orb orb-blue"></div>
+    <div class="orb orb-violet"></div>
+    <div class="orb orb-pink"></div>
+</div>
+
+<div class="noise"></div>
+
+
+<!-- =========================================================
+     TOP NAVIGATION
+========================================================= -->
+
+<header class="topbar">
+
+    <button class="brand" data-go="welcome">
+        <span class="brand-mark">
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+
+        <span>
+            <strong>SANKET</strong>
+            <small>SETU AI</small>
+        </span>
+    </button>
+
+
+    <div class="header-right">
+
+        <div class="status-pill">
+            <span class="status-dot"></span>
+            AI ACCESSIBILITY
+        </div>
+
+        <button id="theme" class="theme-btn" aria-label="Toggle theme">
+            ◐
+        </button>
+
+    </div>
+
+</header>
+
+
+<main>
+
+
+<!-- =========================================================
+     PAGE 1 — WELCOME
+========================================================= -->
+
+<section id="welcome" class="page active welcome-page">
+
+    <div class="welcome-shell">
+
+        <!-- LEFT HERO -->
+
+        <div class="welcome-copy">
+
+            <div class="eyebrow">
+                <span></span>
+                AI × ACCESSIBILITY × GOVERNMENT
+            </div>
+
+            <h1>
+                UNDERSTAND.
+                <br>
+                <span>CONNECT.</span>
+                <br>
+                EMPOWER.
+            </h1>
+
+            <p class="hero-description">
+                A multimodal AI accessibility platform that understands
+                <b>Indian Sign Language</b>, voice, text and documents —
+                then intelligently routes every request to the right assistance.
+            </p>
+
+
+            <div class="hero-actions">
+
+                <button class="primary-btn" data-go="hub">
+                    <span>GET STARTED</span>
+                    <b>→</b>
+                </button>
+
+                <button class="secondary-btn" data-go="sign">
+                    <span class="play-icon">▶</span>
+                    LIVE SIGN
+                </button>
+
+            </div>
+
+
+            <div class="hero-tags">
+
+                <span>ISL</span>
+                <span>VOICE</span>
+                <span>TEXT</span>
+                <span>RAG</span>
+                <span>AI</span>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT VISUAL -->
+
+        <div class="welcome-visual">
+
+            <div class="visual-glow"></div>
+
+            <div class="visual-header">
+                <span>LIVE AI VISION</span>
+
+                <span class="live-indicator">
+                    <i></i> SYSTEM READY
+                </span>
+            </div>
+
+
+            <!-- HAND VISUAL -->
+
+            <div class="hand-stage">
+
+                <div class="scan-line"></div>
+
+                <svg
+                    class="hand-svg"
+                    viewBox="0 0 500 620"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+
+                    <!-- subtle hand silhouette -->
+
+                    <path
+                        class="hand-outline"
+                        d="
+                        M165 505
+                        C142 482 137 445 142 405
+                        L150 326
+
+                        C151 315 143 300 134 282
+                        L99 213
+                        C92 199 96 184 108 177
+                        C121 170 134 175 142 188
+                        L181 249
+
+                        L169 113
+                        C168 96 179 84 193 84
+                        C208 84 216 95 217 111
+                        L226 232
+
+                        L234 67
+                        C235 50 247 39 261 40
+                        C276 41 284 53 284 69
+                        L282 229
+
+                        L299 91
+                        C301 75 313 65 327 68
+                        C341 71 348 83 346 98
+                        L329 240
+
+                        L349 139
+                        C352 124 365 116 378 120
+                        C391 124 398 137 395 151
+                        L373 286
+
+                        C368 317 375 345 391 373
+
+                        C417 418 416 470 383 510
+
+                        C346 555 293 578 238 570
+
+                        C207 565 183 546 165 505
+                        Z
+                        "
+                    />
+
+                    <!-- thin palm geometry -->
+
+                    <path class="hand-line"
+                          d="M165 505 C205 456 220 400 226 330" />
+
+                    <path class="hand-line"
+                          d="M226 330 L217 111" />
+
+                    <path class="hand-line"
+                          d="M226 330 L284 69" />
+
+                    <path class="hand-line"
+                          d="M226 330 L346 98" />
+
+                    <path class="hand-line"
+                          d="M226 330 L395 151" />
+
+                    <path class="hand-line"
+                          d="M226 330 L373 286" />
+
+                    <path class="hand-line"
+                          d="M226 330 L142 188" />
+
+                    <path class="hand-line"
+                          d="M226 330 L150 326" />
+
+                    <path class="hand-line"
+                          d="M226 330 L142 405" />
+
+                    <path class="hand-line"
+                          d="M226 330 C270 370 320 392 373 420" />
+
+                    <path class="hand-line"
+                          d="M226 330 C258 310 295 295 329 280" />
+
+
+                    <!-- PALM CONNECTIONS -->
+
+                    <path class="hand-line faint"
+                          d="M150 326 L226 330 L373 286" />
+
+                    <path class="hand-line faint"
+                          d="M142 405 L226 330 L383 510" />
+
+                    <path class="hand-line faint"
+                          d="M181 249 L226 330 L282 229" />
+
+                    <path class="hand-line faint"
+                          d="M217 111 L282 229" />
+
+                    <path class="hand-line faint"
+                          d="M284 69 L329 280" />
+
+                    <path class="hand-line faint"
+                          d="M346 98 L329 280" />
+
+                    <path class="hand-line faint"
+                          d="M395 151 L373 286" />
+
+
+                    <!-- LANDMARK RINGS -->
+
+                    <g class="landmark-rings">
+
+                        <circle cx="217" cy="111" r="10"/>
+                        <circle cx="284" cy="69" r="10"/>
+                        <circle cx="346" cy="98" r="10"/>
+                        <circle cx="395" cy="151" r="10"/>
+                        <circle cx="142" cy="188" r="10"/>
+                        <circle cx="226" cy="330" r="13"/>
+                        <circle cx="150" cy="326" r="9"/>
+                        <circle cx="142" cy="405" r="9"/>
+                        <circle cx="373" cy="286" r="9"/>
+                        <circle cx="383" cy="510" r="9"/>
+
+                    </g>
+
+
+                    <!-- LANDMARK DOTS -->
+
+                    <g class="landmarks">
+
+                        <circle cx="217" cy="111" r="4"/>
+                        <circle cx="284" cy="69" r="4"/>
+                        <circle cx="346" cy="98" r="4"/>
+                        <circle cx="395" cy="151" r="4"/>
+
+                        <circle cx="142" cy="188" r="4"/>
+                        <circle cx="181" cy="249" r="4"/>
+
+                        <circle cx="150" cy="326" r="4"/>
+                        <circle cx="142" cy="405" r="4"/>
+
+                        <circle cx="226" cy="330" r="5"/>
+
+                        <circle cx="282" cy="229" r="4"/>
+                        <circle cx="329" cy="240" r="4"/>
+                        <circle cx="373" cy="286" r="4"/>
+
+                        <circle cx="238" cy="392" r="4"/>
+                        <circle cx="260" cy="415" r="4"/>
+                        <circle cx="292" cy="426" r="4"/>
+                        <circle cx="328" cy="420" r="4"/>
+                        <circle cx="360" cy="397" r="4"/>
+
+                        <circle cx="204" cy="445" r="4"/>
+                        <circle cx="242" cy="468" r="4"/>
+                        <circle cx="289" cy="475" r="4"/>
+                        <circle cx="334" cy="463" r="4"/>
+                        <circle cx="383" cy="510" r="4"/>
+
+                    </g>
+
+                </svg>
+
+
+                <!-- FLOATING DATA -->
+
+                <div class="data-chip chip-one">
+                    <span class="chip-icon">✦</span>
+                    168 FEATURES / FRAME
+                </div>
+
+                <div class="data-chip chip-two">
+                    <span class="chip-icon cyan">●</span>
+                    LANDMARKS ACTIVE
+                </div>
+
+                <div class="data-chip chip-three">
+                    <span class="chip-icon violet">◈</span>
+                    CUSTOM MODEL
+                </div>
+
+
+                <!-- ACCESSIBILITY NODE -->
+
+                <div class="accessibility-node">
+
+                    <div class="accessibility-symbol">
+                        ♿
+                    </div>
+
+                    <div>
+                        <small>ACCESSIBILITY</small>
+                        <strong>READY</strong>
+                    </div>
+
+                </div>
+
+
+                <!-- GOVERNMENT NETWORK -->
+
+                <div class="gov-network">
+
+                    <div class="network-line n1"></div>
+                    <div class="network-line n2"></div>
+                    <div class="network-line n3"></div>
+
+                    <span class="network-node node-a"></span>
+                    <span class="network-node node-b"></span>
+                    <span class="network-node node-c"></span>
+
+                    <div class="gov-label">
+                        <small>CONNECTED TO</small>
+                        <strong>GOVERNMENT SERVICES</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- BOTTOM SYSTEM STRIP -->
+
+    <div class="welcome-system-strip">
+
+        <div class="system-card">
+            <span class="system-number">01</span>
+
+            <div>
+                <strong>SIGN → UNDERSTAND</strong>
+                <small>MediaPipe + Custom AI</small>
+            </div>
+        </div>
+
+
+        <div class="system-connector"></div>
+
+
+        <div class="system-card">
+            <span class="system-number purple">02</span>
+
+            <div>
+                <strong>ORCHESTRATE → ROUTE</strong>
+                <small>Intent-driven AI routing</small>
+            </div>
+        </div>
+
+
+        <div class="system-connector"></div>
+
+
+        <div class="system-card">
+            <span class="system-number pink">03</span>
+
+            <div>
+                <strong>RAG → GUIDE</strong>
+                <small>Verified government information</small>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PAGE 2 — INPUT HUB
+========================================================= -->
+
+<section id="hub" class="page">
+
+    <div class="page-container">
+
+        <div class="page-heading">
+
+            <div class="eyebrow">
+                <span></span>
+                SANKeT SETU / INPUT HUB
+            </div>
+
+            <h2>How can we help you <span>today?</span></h2>
+
+            <p>
+                Speak, sign, type or upload.
+                We'll understand your request and route it intelligently.
+            </p>
+
+        </div>
+
+
+        <div class="input-grid">
+
+            <button class="input-card sign-card" data-go="sign">
+
+                <div class="card-number">01</div>
+
+                <div class="input-icon">
+                    ✋
+                </div>
+
+                <div class="input-content">
+                    <span class="card-kicker">VISION AI</span>
+                    <h3>Sign Input</h3>
+                    <p>
+                        Communicate using Indian Sign Language
+                        through live camera recognition.
+                    </p>
+                </div>
+
+                <span class="card-arrow">→</span>
+
+            </button>
+
+
+            <button class="input-card voice-card" data-go="voice">
+
+                <div class="card-number">02</div>
+
+                <div class="input-icon">
+                    ◉
+                </div>
+
+                <div class="input-content">
+                    <span class="card-kicker">SPEECH AI</span>
+                    <h3>Voice Input</h3>
+                    <p>
+                        Speak naturally and let Sanket Setu
+                        understand your request.
+                    </p>
+                </div>
+
+                <span class="card-arrow">→</span>
+
+            </button>
+
+
+            <button class="input-card text-card" data-go="text">
+
+                <div class="card-number">03</div>
+
+                <div class="input-icon">
+                    Aa
+                </div>
+
+                <div class="input-content">
+                    <span class="card-kicker">LANGUAGE AI</span>
+                    <h3>Text Input</h3>
+                    <p>
+                        Type your question or describe the
+                        assistance you need.
+                    </p>
+                </div>
+
+                <span class="card-arrow">→</span>
+
+            </button>
+
+
+            <button class="input-card doc-card" data-go="doc">
+
+                <div class="card-number">04</div>
+
+                <div class="input-icon">
+                    ▤
+                </div>
+
+                <div class="input-content">
+                    <span class="card-kicker">DOCUMENT AI</span>
+                    <h3>Document Input</h3>
+                    <p>
+                        Upload a document and find relevant
+                        guidance and assistance.
+                    </p>
+                </div>
+
+                <span class="card-arrow">→</span>
+
+            </button>
+
+        </div>
+
+
+        <!-- ORCHESTRATOR VISUAL -->
+
+        <div class="orchestrator-card">
+
+            <div class="orchestrator-head">
+
+                <div>
+                    <span class="card-kicker">CORE INTELLIGENCE</span>
+                    <h3>THE ORCHESTRATION LAYER</h3>
+                </div>
+
+                <span class="live-indicator">
+                    <i></i> ACTIVE
+                </span>
+
+            </div>
+
+
+            <div class="orchestrator-flow">
+
+                <div class="flow-node">
+                    <span>01</span>
+                    <strong>INPUT</strong>
+                    <small>Sign / Voice / Text</small>
+                </div>
+
+                <div class="flow-line"></div>
+
+                <div class="flow-node active-node">
+                    <span>02</span>
+                    <strong>ORCHESTRATOR</strong>
+                    <small>Understands intent</small>
+                </div>
+
+                <div class="flow-line"></div>
+
+                <div class="flow-node">
+                    <span>03</span>
+                    <strong>AI CAPABILITY</strong>
+                    <small>Routes intelligently</small>
+                </div>
+
+                <div class="flow-line"></div>
+
+                <div class="flow-node">
+                    <span>04</span>
+                    <strong>RESULT</strong>
+                    <small>Accessible guidance</small>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- TEACH MY SIGN -->
+
+        <button class="teach-banner" data-go="teach">
+
+            <div class="teach-banner-icon">
+                ✦
+            </div>
+
+            <div>
+                <span>PERSONAL CALIBRATION</span>
+                <strong>Teach My Signs</strong>
+                <small>Build your own private custom sign vocabulary.</small>
+            </div>
+
+            <b>→</b>
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PAGE 3 — LIVE SIGN TRANSLATION
+========================================================= -->
+
+<section id="sign" class="page">
+
+    <div class="page-container">
+
+        <div class="page-heading compact">
+
+            <div class="eyebrow">
+                <span></span>
+                VISION AI / LIVE MODE
+            </div>
+
+            <h2>LIVE <span>SIGN TRANSLATION</span></h2>
+
+            <p>
+                Show a trained sign to the camera.
+                MediaPipe landmarks and your custom model process it in real time.
+            </p>
+
+        </div>
+
+
+        <div class="sign-layout">
+
+            <!-- CAMERA -->
+
+            <div class="camera-panel">
+
+                <div class="panel-top">
+
+                    <div>
+                        <span class="card-kicker">CAMERA FEED</span>
+                        <strong>LIVE CAPTURE</strong>
+                    </div>
+
+                    <span id="hands" class="camera-status">
+                        WAITING
+                    </span>
+
+                </div>
+
+
+                <div class="camera-box">
+
+                    <video id="video" autoplay playsinline muted></video>
+
+                    <canvas
+                        id="canvas"
+                        width="1280"
+                        height="720"
+                    ></canvas>
+
+                    <div id="placeholder" class="camera-placeholder">
+
+                        <div class="camera-placeholder-icon">
+                            ✋
+                        </div>
+
+                        <strong>Camera Ready</strong>
+                        <small>Press START CAMERA to begin</small>
+
+                    </div>
+
+
+                    <div class="camera-corner tl"></div>
+                    <div class="camera-corner tr"></div>
+                    <div class="camera-corner bl"></div>
+                    <div class="camera-corner br"></div>
+
+                    <div class="camera-scan"></div>
+
+                </div>
+
+
+                <div class="camera-controls">
+
+                    <button id="start" class="primary-btn">
+                        START CAMERA
+                    </button>
+
+                    <button id="stop" class="secondary-btn">
+                        STOP
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- RECOGNITION -->
+
+            <div class="recognition-panel">
+
+                <div class="recognition-top">
+
+                    <span class="card-kicker">CUSTOM MODEL</span>
+
+                    <div id="modelstate" class="model-state">
+                        ● MODEL READY
+                    </div>
+
+                </div>
+
+
+                <div class="prediction-box">
+
+                    <small>DETECTED SIGN</small>
+
+                    <div id="pred" class="prediction">
+                        —
+                    </div>
+
+                    <div class="confidence-row">
+
+                        <span>CONFIDENCE</span>
+                        <strong id="conf">0%</strong>
+
+                    </div>
+
+                    <div class="confidence-bar">
+                        <div id="fill"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="buffer-panel">
+
+                    <div class="buffer-head">
+                        <span>FRAME BUFFER</span>
+                        <strong id="buffer">0 / 32</strong>
+                    </div>
+
+                    <div class="buffer-track">
+                        <div class="buffer-fill"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="feature-stats">
+
+                    <div>
+                        <strong>168</strong>
+                        <span>FEATURES / FRAME</span>
+                    </div>
+
+                    <div>
+                        <strong>32</strong>
+                        <span>SEQUENCE FRAMES</span>
+                    </div>
+
+                    <div>
+                        <strong>2</strong>
+                        <span>HANDS SUPPORTED</span>
+                    </div>
+
+                </div>
+
+
+                <div class="model-badge">
+                    <span>✓</span>
+                    CUSTOM MODEL FIRST
+                </div>
+
+
+                <button id="use" class="primary-btn full-btn">
+                    USE THIS INPUT →
+                </button>
+
+
+                <button class="ghost-btn full-btn" data-go="teach">
+                    TEACH MY SIGNS
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PAGE 4 — TEACH MY SIGNS
+========================================================= -->
+
+<section id="teach" class="page">
+
+    <div class="page-container">
+
+        <div class="page-heading">
+
+            <div class="eyebrow">
+                <span></span>
+                PERSONAL CALIBRATION
+            </div>
+
+            <h2>TEACH <span>MY SIGNS</span></h2>
+
+            <p>
+                Create a private custom vocabulary by teaching Sanket Setu
+                the signs you use.
+            </p>
+
+        </div>
+
+
+        <div class="teach-layout">
+
+            <!-- CAMERA -->
+
+            <div class="camera-panel calibration-camera">
+
+                <div class="panel-top">
+
+                    <div>
+                        <span class="card-kicker">CALIBRATION CAMERA</span>
+                        <strong>CAPTURE SIGN</strong>
+                    </div>
+
+                    <span id="tstatus" class="camera-status">
+                        READY
+                    </span>
+
+                </div>
+
+
+                <div class="camera-box">
+
+                    <video id="tvideo" autoplay playsinline muted></video>
+
+                    <canvas
+                        id="tcanvas"
+                        width="1280"
+                        height="720"
+                    ></canvas>
+
+                    <div id="tplaceholder" class="camera-placeholder">
+
+                        <div class="camera-placeholder-icon violet-icon">
+                            ◎
+                        </div>
+
+                        <strong>Calibration Camera</strong>
+
+                        <small>
+                            Start camera and hold your sign naturally
+                        </small>
+
+                    </div>
+
+                    <div class="camera-corner tl"></div>
+                    <div class="camera-corner tr"></div>
+                    <div class="camera-corner bl"></div>
+                    <div class="camera-corner br"></div>
+
+                </div>
+
+
+                <div class="camera-controls">
+
+                    <button id="tstart" class="primary-btn">
+                        START CAMERA
+                    </button>
+
+                    <button id="tsample" class="secondary-btn">
+                        STOP CAMERA
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- CALIBRATION CONTROL -->
+
+            <div class="calibration-panel">
+
+                <div class="calibration-header">
+
+                    <span class="card-kicker">CUSTOM VOCABULARY</span>
+
+                    <h3>Teach a new sign</h3>
+
+                    <p>
+                        Each sample records 32 valid landmark frames.
+                    </p>
+
+                </div>
+
+
+                <label class="field-label" for="label">
+                    SIGN LABEL
+                </label>
+
+                <input
+                    id="label"
+                    class="text-field"
+                    type="text"
+                    placeholder="Example: HELLO"
+                    autocomplete="off"
+                >
+
+
+                <button id="capture" class="capture-btn">
+                    <span>●</span>
+                    CAPTURE 32 FRAMES
+                </button>
+
+
+                <div class="sample-progress">
+
+                    <div class="sample-progress-head">
+                        <span>CURRENT SAMPLE</span>
+                        <strong id="sample">0 / 32</strong>
+                    </div>
+
+                    <div class="sample-progress-track">
+                        <div id="samplefill"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="calibration-stats">
+
+                    <div class="cal-stat">
+                        <strong id="total">0</strong>
+                        <span>TOTAL SAMPLES</span>
+                    </div>
+
+                    <div class="cal-stat">
+                        <strong id="saved">0</strong>
+                        <span>LABELS READY</span>
+                    </div>
+
+                </div>
+
+
+                <div class="training-rule">
+
+                    <div class="rule-icon">!</div>
+
+                    <div>
+                        <strong>TRAINING REQUIREMENT</strong>
+                        <p>
+                            Minimum 2 labels with at least 2 samples each.
+                            Maximum 10 samples per label.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <button id="train" class="primary-btn full-btn">
+                    TRAIN MY SIGNS →
+                </button>
+
+                <button id="reset" class="danger-btn full-btn">
+                    RESET CALIBRATION
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- CALIBRATION PIPELINE -->
+
+        <div class="calibration-pipeline">
+
+            <div class="pipeline-title">
+                <span>HOW YOUR CUSTOM MODEL IS BUILT</span>
+            </div>
+
+            <div class="pipeline-flow">
+
+                <div class="pipeline-node">
+                    <b>01</b>
+                    <strong>LABEL</strong>
+                    <small>Your sign name</small>
+                </div>
+
+                <i></i>
+
+                <div class="pipeline-node">
+                    <b>02</b>
+                    <strong>32 FRAMES</strong>
+                    <small>Temporal sequence</small>
+                </div>
+
+                <i></i>
+
+                <div class="pipeline-node">
+                    <b>03</b>
+                    <strong>168 FEATURES</strong>
+                    <small>Hand landmarks</small>
+                </div>
+
+                <i></i>
+
+                <div class="pipeline-node">
+                    <b>04</b>
+                    <strong>CUSTOM MODEL</strong>
+                    <small>Random Forest</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PAGE 5 — VOICE
+========================================================= -->
+
+<section id="voice" class="page">
+
+    <div class="page-container centered-page">
+
+        <div class="mode-icon voice-mode">
+            ◉
+        </div>
+
+        <div class="eyebrow">
+            <span></span>
+            SPEECH INPUT
+        </div>
+
+        <h2>VOICE <span>ASSISTANCE</span></h2>
+
+        <p class="center-description">
+            Speak your request naturally. Sanket Setu will convert your
+            speech into text and route it through the orchestration layer.
+        </p>
+
+
+        <div class="voice-console">
+
+            <button id="listen" class="mic-button">
+                <span class="mic-ring"></span>
+                <strong>MIC</strong>
+            </button>
+
+            <div id="vstatus" class="voice-status">
+                Ready to listen
+            </div>
+
+            <div id="transcript" class="transcript">
+                Your spoken request will appear here...
+            </div>
+
+            <button id="vuse" class="primary-btn">
+                USE THIS INPUT →
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PAGE 6 — TEXT
+========================================================= -->
+
+<section id="text" class="page">
+
+    <div class="page-container centered-page">
+
+        <div class="mode-icon text-mode">
+            Aa
+        </div>
+
+        <div class="eyebrow">
+            <span></span>
+            TEXT INPUT
+        </div>
+
+        <h2>TYPE YOUR <span>REQUEST</span></h2>
+
+        <p class="center-description">
+            Describe what you need and Sanket Setu will identify
+            the appropriate assistance.
+        </p>
+
+
+        <div class="text-console">
+
+            <textarea
+                id="textinput"
+                class="large-textarea"
+                placeholder="Example: I want to know about scholarship eligibility..."
+            ></textarea>
+
+            <button id="textuse" class="primary-btn">
+                UNDERSTAND REQUEST →
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PAGE 7 — DOCUMENT
+========================================================= -->
+
+<section id="doc" class="page">
+
+    <div class="page-container centered-page">
+
+        <div class="mode-icon doc-mode">
+            ▤
+        </div>
+
+        <div class="eyebrow">
+            <span></span>
+            DOCUMENT INPUT
+        </div>
+
+        <h2>UPLOAD A <span>DOCUMENT</span></h2>
+
+        <p class="center-description">
+            Upload a supported document to begin the assistance workflow.
+        </p>
+
+
+        <div class="document-console">
+
+            <label class="upload-zone" for="file">
+
+                <div class="upload-icon">
+                    ↑
+                </div>
+
+                <strong>DROP OR SELECT DOCUMENT</strong>
+
+                <small>
+                    PDF · DOC · DOCX · TXT · IMAGE
+                </small>
+
+                <input
+                    id="file"
+                    type="file"
+                    accept=".pdf,.doc,.docx,.txt,image/*"
+                >
+
+            </label>
+
+
+            <div id="fileinfo" class="file-info">
+                No document selected
+            </div>
+
+
+            <button id="docuse" class="primary-btn">
+                PROCESS DOCUMENT →
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PAGE 8 — ORCHESTRATOR PROCESSING
+========================================================= -->
+
+<section id="processing" class="page">
+
+    <div class="processing-screen">
+
+        <div class="processing-orbit">
+
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+            <div class="orbit orbit-three"></div>
+
+            <div class="processing-core">
+
+                <div class="mini-hand">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="eyebrow">
+            <span></span>
+            ORCHESTRATOR
+        </div>
+
+
+        <h2 id="processing-title">
+            Understanding your request.
+        </h2>
+
+        <p id="processing-sub">
+            Your request is being routed to the appropriate assistance layer.
+        </p>
+
+
+        <div class="processing-flow">
+
+            <span class="processing-step active">INPUT</span>
+            <i></i>
+            <span class="processing-step">INTENT</span>
+            <i></i>
+            <span class="processing-step">CAPABILITY</span>
+            <i></i>
+            <span class="processing-step">AI / RAG</span>
+            <i></i>
+            <span class="processing-step">RESULT</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PAGE 9 — RESULT
+========================================================= -->
+
+<section id="result" class="page">
+
+    <div class="page-container result-container">
+
+        <div class="result-hero">
+
+            <div class="result-icon">
+                ✓
+            </div>
+
+            <div>
+                <div class="eyebrow">
+                    <span></span>
+                    ASSISTANCE FOUND
+                </div>
+
+                <h2 id="rtitle">
+                    Assistance
+                </h2>
+
+                <p id="rsub">
+                    Based on your request
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="result-grid">
+
+            <article class="answer-card">
+
+                <span class="card-kicker">AI RESPONSE</span>
+
+                <div id="answer" class="answer-content">
+                    Your assistance result will appear here.
+                </div>
+
+            </article>
+
+
+            <aside id="keys" class="key-grid">
+
+                <div class="key-card">
+                    <span>01</span>
+                    <strong>ELIGIBILITY</strong>
+                    <small>Relevant requirements</small>
+                </div>
+
+                <div class="key-card">
+                    <span>02</span>
+                    <strong>DOCUMENTS</strong>
+                    <small>What you may need</small>
+                </div>
+
+                <div class="key-card">
+                    <span>03</span>
+                    <strong>PROCESS</strong>
+                    <small>Next steps</small>
+                </div>
+
+                <div class="key-card">
+                    <span>04</span>
+                    <strong>BENEFITS</strong>
+                    <small>Available assistance</small>
+                </div>
+
+            </aside>
+
+        </div>
+
+
+        <div class="sources-card">
+
+            <div class="sources-header">
+                <span class="card-kicker">VERIFIED SOURCES</span>
+                <strong>Official information</strong>
+            </div>
+
+            <div id="sources" class="sources-list">
+                Sources will appear here.
+            </div>
+
+        </div>
+
+
+        <div class="result-actions">
+
+            <button id="speak" class="secondary-btn">
+                ◉ READ ALOUD
+            </button>
+
+            <button class="primary-btn" data-go="hub">
+                NEW REQUEST →
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- =========================================================
+     TOAST
+========================================================= -->
+
+<div id="toast" class="toast"></div>
+
+
+<!-- =========================================================
+     APP JS
+========================================================= -->
+
+<script src="app.js?v=6"></script>
+
+</body>
+</html>
